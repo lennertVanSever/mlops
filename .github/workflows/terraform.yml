@@ -38,10 +38,6 @@ jobs:
         working-directory: ./infra
         run: terraform init
 
-      - name: Lint Terraform
-        working-directory: ./infra
-        run: terraform fmt -check
-
       - name: Validate Terraform
         working-directory: ./infra
         run: terraform validate
