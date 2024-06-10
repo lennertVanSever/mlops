@@ -25,7 +25,7 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 # Initialize MLflow and start tracking
-mlflow.set_tracking_uri(uri="http://localhost:5000")
+mlflow.set_tracking_uri(uri="http://127.0.0.1:5000")
 mlflow.set_experiment("MLflow Test")
 
 with mlflow.start_run():
